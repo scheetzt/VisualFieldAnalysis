@@ -1,0 +1,22 @@
+# VisualFieldAnalysis
+
+This repository contains a set of programs used to process traced Goldmann visual fields. 
+Specifically, the XML format used in the TruthMarker App (available on the App Store iPadOS). 
+Example files and test cases will be provided shortly, along with documentation.
+
+Future work:
+We are currently merging these programs to make a streamlined process, consisting of four parts, 
+each of which will have a program. These are QA, processing, 2D rendering and 3D rendering.
+
+Programmatic requirements:
+The majority of the programs are written in Python, and require version 3 to correctly.
+
+Specific requirements by program:
+- QA_traces.py requires PIL and pyx
+- drawGVF.py requires pyx, shapely, and numpy 
+- drawGVF_open_isopters.py requires pyx, shapely, and numpy
+- extrap_from_I4e_text.py requires shapely 
+- extrap_from_III4e_text.py requires shapely
+- render3D.py requires numpy, dateutil, pandas, plotly, matplotlib, shapely, and skimage 
+- add_splines.pl requires Getopt::Long (Perl)
+
